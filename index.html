@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#211914">
+  <meta name="description" content="Studio SDPlacido em Várzea Grande: mechas, cortes, cor, tratamentos capilares, sobrancelhas, cílios, pele e maquiagem.">
+  <title>Studio SDPlacido | Cabelos e beleza</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23211914'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Georgia,serif' font-size='26' font-weight='bold' fill='%23d7ac76'%3ESD%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{font-family:"DM Sans",Arial,sans-serif;--paper:#ebe1d7;color:#2c221e;background:var(--paper);scroll-behavior:smooth}
+    *{box-sizing:border-box}body{margin:0}a{color:inherit;text-decoration:none}button{font:inherit}img{max-width:100%;display:block}
+    .shell{max-width:1440px;margin:auto;padding:0 clamp(20px,5vw,76px)}
+    .topbar{height:108px;display:flex;align-items:center;justify-content:space-between;gap:24px;background:var(--paper)}
+    .brand{display:inline-flex;align-items:center;justify-content:center;flex:none;width:156px;height:104px}
+    .brand img{display:block;width:100%;height:100%;object-fit:contain}
+    .nav{display:flex;align-items:center;gap:32px;font-size:.9rem;font-weight:600}.nav a:hover,.footer a:hover{color:#9b6c3f}
+    .nav .nav-contact{border:1px solid #b59270;padding:12px 20px;border-radius:2px}
+    .hero{position:relative;min-height:min(720px,78vh);display:flex;align-items:center;overflow:hidden;background:#211914;color:#fff}
+    .hero-photo{position:absolute;right:clamp(52px,7vw,110px);top:0;width:54%;height:100%;overflow:hidden}.hero-photo img{position:absolute;right:0;bottom:0;width:100%;height:92%;object-fit:contain;object-position:right bottom}
+    .hero-content{position:relative;z-index:2;width:100%;padding-top:100px;padding-bottom:110px;pointer-events:none}.hero-content>*{pointer-events:auto}
+    .eyebrow{color:#cda776;text-transform:uppercase;letter-spacing:.22em;font-size:.75rem;font-weight:700;line-height:1.5}
+    h1,h2,h3,p{margin-top:0}h1,h2,h3{font-family:"Playfair Display",Georgia,serif;font-weight:400}
+    h1{font-size:clamp(3.2rem,7vw,7.1rem);line-height:1.02;letter-spacing:-.045em;max-width:850px;margin:22px 0 28px}
+    .hero h1{margin-top:0}.hero p{font-size:clamp(1rem,1.5vw,1.2rem);line-height:1.7;color:#eee2d7;max-width:500px;margin-bottom:35px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:15px 26px;background:#cda776;color:#211914;font-size:.9rem;font-weight:700;letter-spacing:.02em;transition:background .2s,transform .2s}
+    .btn:hover{background:#e3bd8b;transform:translateY(-2px)}.btn:focus-visible,a:focus-visible{outline:3px solid #d2a569;outline-offset:4px}
+    .hero-bottom{position:absolute;bottom:28px;left:0;right:0;z-index:2;color:#c8b5a4;display:flex;justify-content:flex-start;font-size:.78rem;text-transform:uppercase;letter-spacing:.18em;pointer-events:none}
+    .section{padding:clamp(76px,9vw,136px) 0}.section-head{max-width:780px;margin-bottom:48px}.section-head h2{font-size:clamp(2.7rem,5vw,5.2rem);line-height:1.1;letter-spacing:-.035em;margin:14px 0 18px}.section-head p{font-size:1.05rem;line-height:1.7;color:#746760;max-width:610px}
+    .services-section{position:relative;overflow:hidden;background:var(--paper);padding-bottom:clamp(48px,6vw,88px)}.services-section .section-head{max-width:780px}.services-section .section-head p{margin:12px 0 0}
+    .services{display:grid;grid-template-columns:1.08fr 1fr;gap:24px}.service{align-self:start;background:#fbf8f3;border:1px solid #d7c7b7;box-shadow:0 22px 46px rgba(55,35,25,.16),0 4px 10px rgba(55,35,25,.08);overflow:hidden;transition:transform .25s,box-shadow .25s}.service-top{position:relative;height:220px;display:flex;align-items:end;padding:30px;overflow:hidden;background:#2a1e19;color:#f8efe5}.service-top img{position:absolute;right:0;bottom:0;width:57%;height:94%;object-fit:contain;object-position:right bottom}.service-top-content{position:relative;z-index:1;max-width:68%;text-shadow:0 2px 8px rgba(21,13,10,.8)}.number{color:#e6bc89;font-size:.76rem;letter-spacing:.18em;font-weight:700}.service h3{font-size:clamp(2.5rem,4vw,3.7rem);line-height:1.08;margin:9px 0 0;letter-spacing:-.035em}.service-list{list-style:none;padding:14px 24px 26px;margin:0}.service-item{border-bottom:1px solid #e3d7cc;transition:background .3s,box-shadow .3s}.service-item:last-child{border-bottom:0}.service-item.is-open{background:#f1e5d8;box-shadow:inset 3px 0 #b78b59}.service-trigger{appearance:none;border:0;background:transparent;color:#46382f;width:100%;padding:18px 10px;display:flex;align-items:center;justify-content:space-between;gap:16px;text-align:left;cursor:pointer;font-size:1.03rem;line-height:1.45;font-weight:600}.service-trigger:hover{color:#9b6c3f}.service-trigger:focus-visible{outline:3px solid #b78b59;outline-offset:-3px}.service-topic{display:block;position:relative;flex:1;min-width:0;padding-left:20px;transition:transform .25s}.service-topic:before{content:"";position:absolute;left:0;top:.67em;width:5px;height:5px;border-radius:50%;background:#b78b59}.service-trigger:hover .service-topic{transform:translateX(3px)}.service-icon{display:grid;place-items:center;flex:none;width:30px;height:30px;border:1px solid #bca18a;border-radius:50%;color:#9b6c3f;font-size:1.25rem;line-height:1;transition:transform .3s,background .3s,color .3s}.is-open .service-icon{transform:rotate(45deg);background:#9b6c3f;color:#fff}.service-panel{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .35s ease,opacity .3s ease}.service-panel-inner{overflow:hidden}.service-panel p{margin:0;padding:0 48px 20px 30px;color:#675950;font-size:.96rem;line-height:1.6}.is-open .service-panel{grid-template-rows:1fr;opacity:1}
+    .section-divider{display:flex;align-items:center;gap:clamp(18px,3vw,42px);height:88px;background:var(--paper)}.divider-rule{position:relative;flex:1;height:1px;background:#b89979}.divider-rule:first-child:after,.divider-rule:last-child:before{content:"";position:absolute;top:50%;width:6px;height:6px;background:#b89979;transform:translateY(-50%) rotate(45deg)}.divider-rule:first-child:after{right:0}.divider-rule:last-child:before{left:0}.divider-seal{display:grid;place-items:center;flex:none;width:72px;height:72px;border:2px solid #b89979;border-radius:50%;background:#2a1e19;color:#e8c59c;box-shadow:0 0 0 6px var(--paper),0 0 0 7px #b89979,0 9px 19px rgba(56,36,24,.18)}.divider-seal svg{width:30px;height:30px}
+    .experience{position:relative;overflow:hidden;background:var(--paper);padding-top:clamp(54px,6vw,90px);padding-bottom:0}.experience-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(38px,8vw,120px);align-items:center}.image-panel{aspect-ratio:4/4.7;overflow:visible;background:transparent}.image-panel img{width:100%;height:100%;object-fit:contain;object-position:center bottom}.experience-copy h2{font-size:clamp(2.7rem,5vw,5.2rem);line-height:1.1;letter-spacing:-.035em;margin:18px 0 26px}.experience-copy p{font-size:1.05rem;line-height:1.8;color:#62544d;max-width:500px}.fine-line{height:1px;background:#bfa997;max-width:460px;margin:36px 0}.mini-note{font-size:.88rem!important;text-transform:uppercase;letter-spacing:.13em;color:#8b634b!important}
+    .gallery{position:relative;background:#f7f3ee;color:#2c221e;padding-bottom:0}
+    .professional-intro{margin-bottom:56px}.professional-intro:before{content:"";display:block;width:82px;height:3px;background:#b58a60;margin-bottom:26px}.professional-intro h2{font-size:clamp(2.8rem,5.4vw,5.4rem);line-height:1.06;letter-spacing:-.04em;margin:0;max-width:1200px}
+    .professional-copy{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(26px,5vw,72px);margin-top:34px;padding:34px clamp(24px,4vw,54px);border-left:4px solid #b58a60;background:#fffaf5;box-shadow:0 16px 34px rgba(55,35,25,.14),0 3px 8px rgba(55,35,25,.06)}.professional-copy p{font-size:1.1rem;line-height:1.78;color:#493b32;margin:0}.professional-copy p:first-child{font-weight:500}
+    .gallery-stage{background:#aea39b;border-top:1px solid #c7bbb1}.gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:end;padding-top:30px}.gallery-grid figure{display:flex;align-items:flex-end;margin:0;overflow:visible;aspect-ratio:4/5}.gallery-grid img{width:100%;height:100%;object-fit:contain;object-position:center bottom}
+    .contact{background:#211914;color:#f7f0e7;text-align:center}.contact-inner{max-width:1120px;margin:auto}.contact h2{font-size:clamp(3rem,6vw,6rem);line-height:1.08;letter-spacing:-.035em;margin:18px 0 25px}.contact p{color:#cbb9aa;font-size:1.06rem;line-height:1.75;margin:0 auto 32px}.contact-lead{max-width:550px;margin-left:auto!important;margin-right:auto!important}.contact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:50px;text-align:left}.contact-card{position:relative;border:1px solid #80654f;background:#2b211c;box-shadow:0 22px 42px rgba(0,0,0,.3),0 4px 9px rgba(0,0,0,.18),inset 0 1px rgba(255,255,255,.06);padding:34px;min-height:280px;display:flex;flex-direction:column;align-items:flex-start;transition:transform .25s,box-shadow .25s}.contact-card:first-child{align-items:center;justify-content:center;text-align:center}.contact-card:first-child .btn{margin-top:26px}.contact .contact-phone{display:block;margin:20px 0 0;color:#e1c5a4;font-size:.98rem}.contact-phone:hover{text-decoration:underline}.location address{font-style:normal;line-height:1.7;color:#d9c8b9;font-size:1.05rem;margin:22px 0}.location address strong{color:#f7f0e7;font-weight:600}.map-link{display:inline-block;color:#e1c5a4;border-bottom:1px solid #b58a60;padding-bottom:4px;font-weight:600;font-size:.95rem;margin-top:auto}.map-link:hover{color:#fff}
+    .icon-sprite{position:absolute;width:0;height:0;overflow:hidden}
+    .decor-icon{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
+    .section-decor{position:absolute;width:130px;height:130px;opacity:.22;z-index:0}
+    .services-section>.section-decor{right:4%;top:52px;color:#83563f;transform:rotate(-18deg)}
+    .services-section>.shell,.experience-grid,.professional-intro,.gallery-grid{position:relative;z-index:1}
+    .experience>.section-decor{right:3%;top:46px;color:#98755c;transform:rotate(20deg)}
+    .gallery>.section-decor{right:5%;top:30px;color:#ba9674;transform:rotate(-12deg)}
+    .card-decor{position:absolute;right:23px;top:22px;width:48px;height:48px;color:#c49a6e;opacity:.7}
+    .whatsapp-float{position:fixed;right:clamp(18px,3vw,42px);bottom:clamp(18px,3vw,36px);z-index:50;display:inline-flex;align-items:center;gap:10px;min-height:56px;padding:12px 18px;border:1px solid #eddbbf;border-radius:999px;background:#cda776;color:#211914;box-shadow:0 5px 0 #8d6a49,0 14px 28px rgba(33,25,20,.3);font-size:.9rem;font-weight:700;letter-spacing:.03em;transition:transform .2s,box-shadow .2s,background .2s}
+    .whatsapp-float:hover{transform:translateY(-3px);background:#dcba8e;box-shadow:0 8px 0 #8d6a49,0 18px 32px rgba(33,25,20,.32)}.whatsapp-float:before{content:"";position:absolute;inset:4px;border:1px solid rgba(255,248,235,.55);border-radius:999px;pointer-events:none}.whatsapp-float svg{width:27px;height:27px;flex:none}.whatsapp-float .float-scissors{width:18px;height:18px;opacity:.72;stroke-width:1.8}
+    .motion-photo{cursor:pointer}.motion-photo img{transition:transform .55s cubic-bezier(.22,.7,.2,1),filter .55s;transform-origin:center bottom}
+    .motion-text{transition:transform .32s ease,text-shadow .32s ease;transform-origin:left center}.number.motion-text,.hero-bottom span.motion-text,.footer span.motion-text{display:inline-block}
+    @media(hover:hover) and (prefers-reduced-motion:no-preference){.motion-photo:hover img,.hero:hover .hero-photo img{transform:scale(1.045);filter:saturate(1.08)}.motion-text:hover{transform:translateY(-3px);text-shadow:0 4px 14px rgba(136,89,45,.24)}}
+    .motion-photo.is-activated img{animation:photo-pop .65s ease}.motion-text.is-activated{animation:text-lift .55s ease}
+    @keyframes photo-pop{0%,100%{transform:scale(1)}45%{transform:scale(1.08)}70%{transform:scale(1.025)}}
+    @keyframes text-lift{0%,100%{transform:translateY(0)}45%{transform:translateY(-5px)}72%{transform:translateY(1px)}}
+    @media(hover:hover){.service:hover{transform:translateY(-3px);box-shadow:0 28px 52px rgba(55,35,25,.2),0 6px 14px rgba(55,35,25,.1)}.contact-card:hover{transform:translateY(-4px);box-shadow:0 28px 50px rgba(0,0,0,.34),0 6px 12px rgba(0,0,0,.2),inset 0 1px rgba(255,255,255,.08)}}
+    .footer{background:var(--paper);color:#66574d;padding:30px 0}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:22px;font-size:.82rem}.footer .brand{width:150px;height:100px}
+    @media(max-width:750px){
+      .topbar{height:82px}.nav{gap:8px}.nav a:not(.nav-contact){display:none}.nav .nav-contact{padding:9px 10px;font-size:.76rem}.brand{width:112px;height:76px}
+      .hero{min-height:790px;align-items:end}.hero-photo{right:0;width:100%;height:410px;top:0}.hero-photo img{object-position:center bottom}.hero-content{padding-top:445px;padding-bottom:90px}h1{font-size:clamp(3.3rem,13vw,5.6rem)}.hero-bottom{bottom:20px;font-size:.65rem}
+      .services-section .section-head p{margin-top:18px}.services{grid-template-columns:1fr;gap:18px}.service-top{height:190px;padding:24px}.service-list{padding:10px 16px 18px}.service-trigger{padding:16px 8px;font-size:1rem}.service-panel p{padding:0 38px 18px 28px}
+      .section-divider{height:72px;gap:18px}.divider-seal{width:58px;height:58px}.divider-seal svg{width:25px;height:25px}
+      .experience-grid{grid-template-columns:1fr}.image-panel{aspect-ratio:4/3;order:2}.experience-copy{order:1}
+      .professional-intro{margin-bottom:34px}.professional-copy{grid-template-columns:1fr;gap:20px;margin-top:26px;padding:26px 22px}.gallery-grid{gap:6px;padding-top:22px}.gallery-grid figure{aspect-ratio:3/4}
+      .contact-grid{grid-template-columns:1fr;gap:16px;margin-top:38px}.contact-card{min-height:0;padding:26px}.footer-inner{align-items:flex-start;flex-direction:column}
+      .section-decor{width:86px;height:86px}.gallery>.section-decor{display:none}.card-decor{width:38px;height:38px;right:16px;top:16px}
+      .whatsapp-float{right:16px;bottom:calc(16px + env(safe-area-inset-bottom));min-height:54px;padding:10px 14px;gap:7px;font-size:.78rem}.whatsapp-float svg{width:23px;height:23px}.whatsapp-float .float-scissors{width:15px;height:15px}
+    }
+    @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}.btn,.service,.contact-card,.service-item,.service-topic,.service-icon,.service-panel,.whatsapp-float,.motion-photo img,.motion-text{transition:none}.motion-photo.is-activated img,.motion-text.is-activated{animation:none}}
+  </style>
+</head>
+<body>
+  <svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <symbol id="icon-scissors" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.12 8.12 12 12m2.8 2.8L20 20M20 4 8.12 15.88"/></symbol>
+    <symbol id="icon-dryer" viewBox="0 0 32 32"><path d="M4 8h9a6 6 0 0 1 6 6 6 6 0 0 1-6 6H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2Z"/><path d="M19 10h7v8h-7M9 20v9h5l2-9M27 11h3m-3 3h3m-3 3h3"/><circle cx="12" cy="14" r="2"/></symbol>
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2Z"/><path d="M8.1 7.6c-.5.2-.9 1-.8 1.7.4 2.9 4.4 6.8 7.2 7.3.8.1 1.5-.3 1.8-.9l.3-.8-2.1-1.2-1.1 1c-1.6-.7-3.1-2.2-3.9-3.8l1-1.1-1.2-2.1-1.2-.1Z"/></symbol>
+  </svg>
+  <header class="topbar shell" id="inicio">
+    <a class="brand" href="#inicio" aria-label="Studio SDPlacido, início"><img src="logo-sdplacido-sem-slogan.png" alt="" width="1536" height="1024"></a>
+    <nav class="nav" aria-label="Navegação principal"><a href="#servicos">Serviços</a><a href="#sobre">O espaço</a><a href="#localizacao">Localização</a><a class="nav-contact" href="https://wa.me/5565984367183?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener noreferrer">Agendar horário</a></nav>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title"><div class="hero-photo"><img src="foto-5-sem-fundo.png" alt="Profissional do salão sorrindo com uma tesoura na mão" fetchpriority="high"></div><div class="shell hero-content"><h1 id="hero-title">Seu momento<br>de se sentir bem.</h1><p>Mechas, cor, tratamentos capilares e cuidados de beleza pensados para valorizar o seu estilo.</p><a class="btn" href="https://wa.me/5565984367183?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener noreferrer">Quero agendar</a></div><div class="hero-bottom shell"><span>Cabelos • estética • maquiagem</span></div></section>
+    <section class="section services-section" id="servicos"><svg class="decor-icon section-decor" aria-hidden="true"><use href="#icon-dryer"/></svg><div class="shell">
+      <div class="section-head"><div><div class="eyebrow">Nossos serviços</div><h2>Seu estilo, seu cuidado.</h2></div><p>Toque em um serviço para saber mais. Valores e horários podem ser confirmados no agendamento.</p></div>
+      <div class="services">
+        <article class="service">
+          <div class="service-top"><img src="foto-2-sem-fundo.png" alt="" loading="lazy"><div class="service-top-content"><span class="number">COR · TEXTURA · TRATAMENTO</span><h3>Cabelos</h3></div></div>
+          <ul class="service-list">
+            <li class="service-item"><button class="service-trigger" id="serv-1-trigger" aria-expanded="false" aria-controls="serv-1-panel"><span class="service-topic">Designer de mechas: loiros e iluminados</span><span class="service-icon" aria-hidden="true">+</span></button><div class="service-panel" id="serv-1-panel" role="region" aria-labelledby="serv-1-trigger" aria-hidden="true" inert><div class="service-panel-inner"><p>Técnicas de mechas para criar tons loiros e pontos de luz conforme o visual desejado.</p></div></div></li>
+            <li class="service-item"><button class="service-trigger" id="serv-2-trigger" aria-expanded="false" aria-controls="serv-2-panel"><span class="service-topic">Designer de corte e cor</span><span class="service-icon" aria-hidden="true">+</span></button><div class="service-panel" id="serv-2-panel" role="region" aria-labelledby="serv-2-trigger" aria-hidden="true" inert><div class="service-panel-inner"><p>Corte e coloração para renovar ou manter o visual que você procura.</p></div></div></li>
+            <li class="service-item"><button class="service-trigger" id="serv-3-trigger" aria-expanded="false" aria-controls="serv-3-panel"><span class="service-topic">Realinhamento sem formol</span><span class="service-icon" aria-hidden="true">+</span></button><div class="service-panel" id="serv-3-panel" role="region" aria-labelledby="serv-3-trigger" aria-hidden="true" inert><div class="service-panel-inner"><p>Serviço de alinhamento dos fios com produto sem formol.</p></div></div></li>
+            <li class="service-item"><button class="service-trigger" id="serv-4-trigger" aria-expanded="false" aria-controls="serv-4-panel"><span class="service-topic">Terapia capilar</span><span class="service-icon" aria-hidden="true">+</span></button><div class="service-panel" id="serv-4-panel" role="region" aria-labelledby="serv-4-trigger" aria-hidden="true" inert><div class="service-panel-inner"><p>Cuidados para o couro cabeludo e os fios, conforme suas necessidades.</p></div></div></li>
+            <li class="service-item"><button class="service-trigger" id="serv-5-trigger" aria-expanded="false" aria-controls="serv-5-panel"><span class="service-topic">Tratamentos personalizados</span><span class="service-icon" aria-hidden="true">+</span></button><div class="service-panel" id="serv-5-panel" role="region" aria-labelledby="serv-5-trigger" aria-hidden="true" inert><div class="service-panel-inner"><p>Tratamentos escolhidos de acordo com as características do seu cabelo.</p></div></div></li>
+            <li class="service-item"><button class="service-trigger" id="serv-6-trigger" aria-expanded="false" aria-controls="serv-6-panel"><span class="service-topic">Cabelos com curvaturas</span><span class="service-icon" aria-hidden="true">+</span></button><div class="service-panel" id="serv-6-panel" role="region" aria-labelledby="serv-6-trigger" aria-hidden="true" inert><div class="service-panel-inner"><p>Atendimento especializado em cabelos ondulados, cacheados e crespos.</p></div></div></li>
+          </ul>
+        </article>
+        <article class="service">
+          <div class="service-top"><img src="foto-4-sem-fundo.png" alt="" loading="lazy"><div class="service-top-content"><span class="number">OLHAR · PELE · MAQUIAGEM</span><h3>Rosto e beleza</h3></div></div>
+          <ul class="service-list">
+            <li class="service-item"><button class="service-trigger" id="serv-7-trigger" aria-expanded="false" aria-controls="serv-7-panel"><span class="service-topic">Design de sobrancelhas</span><span class="service-icon" aria-hidden="true">+</span></button><div class="service-panel" id="serv-7-panel" role="region" aria-labelledby="serv-7-trigger" aria-hidden="true" inert><div class="service-panel-inner"><p>Modelagem das sobrancelhas considerando o formato do rosto e sua preferência.</p></div></div></li>
+            <li class="service-item"><button class="service-trigger" id="serv-8-trigger" aria-expanded="false" aria-controls="serv-8-panel"><span class="service-topic">Cílios fio a fio</span><span class="service-icon" aria-hidden="true">+</span></button><div class="service-panel" id="serv-8-panel" role="region" aria-labelledby="serv-8-trigger" aria-hidden="true" inert><div class="service-panel-inner"><p>Aplicação fio a fio para destacar o olhar.</p></div></div></li>
+            <li class="service-item"><button class="service-trigger" id="serv-9-trigger" aria-expanded="false" aria-controls="serv-9-panel"><span class="service-topic">Limpeza de pele</span><span class="service-icon" aria-hidden="true">+</span></button><div class="service-panel" id="serv-9-panel" role="region" aria-labelledby="serv-9-trigger" aria-hidden="true" inert><div class="service-panel-inner"><p>Cuidados de limpeza da pele conforme suas necessidades.</p></div></div></li>
+            <li class="service-item"><button class="service-trigger" id="serv-10-trigger" aria-expanded="false" aria-controls="serv-10-panel"><span class="service-topic">Maquiagem</span><span class="service-icon" aria-hidden="true">+</span></button><div class="service-panel" id="serv-10-panel" role="region" aria-labelledby="serv-10-trigger" aria-hidden="true" inert><div class="service-panel-inner"><p>Produção para diferentes estilos e ocasiões.</p></div></div></li>
+            <li class="service-item"><button class="service-trigger" id="serv-11-trigger" aria-expanded="false" aria-controls="serv-11-panel"><span class="service-topic">Dermaplaning</span><span class="service-icon" aria-hidden="true">+</span></button><div class="service-panel" id="serv-11-panel" role="region" aria-labelledby="serv-11-trigger" aria-hidden="true" inert><div class="service-panel-inner"><p>Técnica de esfoliação superficial da pele.</p></div></div></li>
+          </ul>
+        </article>
+      </div></div>
+    </section>
+    <div class="section-divider shell" aria-hidden="true"><span class="divider-rule"></span><span class="divider-seal"><svg class="decor-icon"><use href="#icon-scissors"/></svg></span><span class="divider-rule"></span></div>
+    <section class="section experience" id="sobre"><svg class="decor-icon section-decor" aria-hidden="true"><use href="#icon-scissors"/></svg><div class="shell experience-grid"><div class="image-panel"><img src="foto-3-sem-fundo.png" alt="Profissional do salão em retrato" loading="lazy"></div><div class="experience-copy"><div class="eyebrow">O seu momento</div><h2>Beleza que começa no cuidado.</h2><p>Seja para renovar o visual ou reservar uma pausa na rotina, cada atendimento merece escuta e atenção. Aqui, o mais importante é que você saia se sentindo você mesma.</p><div class="fine-line"></div><p class="mini-note">Um espaço para você se sentir bem</p></div></div></section>
+    <section class="section gallery" aria-labelledby="gallery-title">
+      <svg class="decor-icon section-decor" aria-hidden="true"><use href="#icon-dryer"/></svg>
+      <div class="shell professional-intro">
+        <h2 id="gallery-title">O olhar por trás de cada cor.</h2>
+        <div class="professional-copy"><p>Há 20 anos, a profissional à frente do Studio SDPlacido dedica seu trabalho aos cabelos, com especialidade em mechas, loiros e iluminados. A experiência aparece na escolha dos tons, no equilíbrio da iluminação e no cuidado com o acabamento.</p><p>Ela escuta o que cada cliente deseja e considera as características dos fios para criar um resultado elegante e pessoal. Cada detalhe recebe atenção, do planejamento à finalização.</p></div>
+      </div>
+      <div class="gallery-stage"><div class="shell gallery-grid">
+        <figure><img src="foto-1-sem-fundo.png" alt="Retrato da profissional do salão em roupa preta" loading="lazy"></figure>
+        <figure><img src="foto-2-sem-fundo.png" alt="Profissional do salão com secador e escova" loading="lazy"></figure>
+        <figure><img src="foto-4-sem-fundo.png" alt="Retrato da profissional do salão em roupa branca" loading="lazy"></figure>
+      </div></div>
+    </section>
+    <section class="section contact" id="contato">
+      <div class="shell contact-inner">
+        <div class="eyebrow">Agendamentos e localização</div><h2>Vamos cuidar de você?</h2><p class="contact-lead">Consulte horários, serviços e valores ou venha conhecer o espaço.</p>
+        <div class="contact-grid">
+          <div class="contact-card"><svg class="decor-icon card-decor" aria-hidden="true"><use href="#icon-scissors"/></svg><div class="eyebrow">WhatsApp</div><a class="btn" href="https://wa.me/5565984367183?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener noreferrer">Chamar no WhatsApp</a><a class="contact-phone" href="https://wa.me/5565984367183?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener noreferrer">(65) 98436-7183</a></div>
+          <div class="contact-card location" id="localizacao"><svg class="decor-icon card-decor" aria-hidden="true"><use href="#icon-scissors"/></svg><div class="eyebrow">Onde estamos</div><address><strong>Comercial do Bosque · Sala 05</strong><br>Rua Governador Pedro Pedrossian, 139<br>Centro Norte, Várzea Grande - MT<br>CEP 78110-354</address><a class="map-link" href="https://www.google.com/maps/dir/?api=1&amp;destination=Rua%20Governador%20Pedro%20Pedrossian%2C%20139%2C%20Centro%20Norte%2C%20V%C3%A1rzea%20Grande%20-%20MT%2C%2078110-354%2C%20Comercial%20do%20Bosque" target="_blank" rel="noopener noreferrer">Abrir rota no mapa</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <a class="whatsapp-float" href="https://wa.me/5565984367183?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener noreferrer" aria-label="Agendar agora pelo WhatsApp"><svg class="decor-icon" aria-hidden="true"><use href="#icon-whatsapp"/></svg><span>Agendar agora</span><svg class="decor-icon float-scissors" aria-hidden="true"><use href="#icon-scissors"/></svg></a>
+  <footer class="footer"><div class="shell footer-inner"><a class="brand" href="#inicio" aria-label="Studio SDPlacido, voltar ao início"><img src="logo-sdplacido-sem-slogan.png" alt="" width="1536" height="1024" loading="lazy"></a><span>Studio SDPlacido · Feito para celebrar a sua beleza.</span></div></footer>
+  <script>
+    const serviceTriggers = [...document.querySelectorAll('.service-trigger')];
+    function setServiceOpen(trigger, open) {
+      const item = trigger.closest('.service-item');
+      const panel = document.getElementById(trigger.getAttribute('aria-controls'));
+      trigger.setAttribute('aria-expanded', String(open));
+      item.classList.toggle('is-open', open);
+      panel.inert = !open;
+      panel.setAttribute('aria-hidden', String(!open));
+    }
+    serviceTriggers.forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const willOpen = trigger.getAttribute('aria-expanded') !== 'true';
+        serviceTriggers.forEach(other => setServiceOpen(other, false));
+        if (willOpen) setServiceOpen(trigger, true);
+      });
+    });
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const motionTimers = new WeakMap();
+    function playMotion(element) {
+      if (reducedMotion.matches) return;
+      clearTimeout(motionTimers.get(element));
+      element.classList.remove('is-activated');
+      void element.offsetWidth;
+      element.classList.add('is-activated');
+      motionTimers.set(element, setTimeout(() => element.classList.remove('is-activated'), 700));
+    }
+    document.querySelectorAll('.hero-photo,.service-top,.image-panel,.gallery-grid figure').forEach(element => {
+      element.classList.add('motion-photo');
+      element.addEventListener('click', () => playMotion(element));
+    });
+    document.querySelector('.hero').addEventListener('click', event => {
+      if (event.target.closest('a,.hero-photo')) return;
+      playMotion(document.querySelector('.hero-photo'));
+    });
+    document.querySelectorAll('h1,h2,h3,p,.eyebrow,.number,.service-topic,.hero-bottom span,.footer span,.nav a,.btn,.contact-phone,.map-link,address,.whatsapp-float').forEach(element => {
+      element.classList.add('motion-text');
+      element.addEventListener('click', () => playMotion(element));
+    });
+  </script>
+</body>
+</html>
